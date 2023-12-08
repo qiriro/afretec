@@ -10,7 +10,7 @@ nav_order: 2
   <div class="card hoverable">
     <div class="row no-gutters">
       <div class="col-sm-4 col-md-3">
-        <img src="/{{site.baseurl}}/assets/img/members/female-person.jpg" class="card-img img-fluid" alt="{{ member['FirstName'] }} {{ member['LastName'] }}" />
+         <img class="card-img-top" src="/{{site.baseurl}}/assets/img/members/female-person.jpg">
       </div>
       <div class="team col-sm-8 col-md-9">
         <div class="card-body">
