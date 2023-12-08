@@ -20,7 +20,7 @@ def download_member_csv():
     df.to_csv(raw_csv_file, index=False)
 def add_image_file_name(df):
     df['Image'] = df.apply(lambda row: get_image_file_name(row), axis=1)
-    del df['Photo']
+   
     return df
 def download_images(df):
     root_path = os.path.join(os.path.dirname(__file__),
@@ -32,7 +32,7 @@ def download_images(df):
         image_url = construct_image_url(photo)
         if image_url is None:
             continue
-        file_name =f"{row['FirstName']}_{row['LastName']}.jpg"
+        file_name =f"{row['FirstName']}_{row['LastName']}.jpg".replace(" ", "")
         out_file = os.path.join(root_path, file_name)
         #print(f"Downloading {image_url} to {out_file}")
         gdown.download(image_url, out_file, quiet=False)
@@ -138,7 +138,7 @@ def resize_and_compress_images(quality=85):
 
 if __name__ == '__main__':
     #download_member_csv()
-    df = clean_member_info()
+    #df = clean_member_info()
     #download_images(df)
     resize_and_compress_images()
     
