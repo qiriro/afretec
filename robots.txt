@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://qiriro.com/afretec/sitemap.xml
