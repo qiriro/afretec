@@ -19,9 +19,7 @@ nav_order: 2
             <h6 class="card-subtitle mb-2 text-muted">{{ member['Occupation'] }}</h6>
             <p class="card-text">{{ member['Expertise'] }}</p>
           </a>
-
           <a href="mailto:{{ member['Email'] }}" class="card-link"><i class="fas fa-envelope"></i></a>
-
           {% if member['LinkedIn'] %}
             <a href="{{ member['LinkedIn'] }}" class="card-link" target="_blank"><i class="fab fa-linkedin"></i></a>
           {% endif %}
