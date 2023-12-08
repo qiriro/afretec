@@ -10,11 +10,11 @@ nav_order: 2
   <div class="card hoverable">
     <div class="row no-gutters">
       <div class="col-sm-4 col-md-3">
-         <img class="card-img-top" src="/{{site.baseurl}}/assets/img/members/female-person.jpg">
+         <img class="card-img-top" src="{{site.url}}{{ site.baseurl}}/assets/img/members/Kizito_Nkurikiyeyezu.jpg">
       </div>
       <div class="team col-sm-8 col-md-9">
         <div class="card-body">
-          <a href="/members/{{ member['LastName'] | slugify }}">
+          <a href="{{ member['Website']}}">
             <h5 class="card-title">{{ member['Title'] }} {{ member['FirstName'] }} {{ member['LastName'] }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ member['Occupation'] }}</h6>
             <p class="card-text">{{ member['Expertise'] }}</p>
