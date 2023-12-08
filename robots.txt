@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://qiriro.com/afretec//sitemap.xml
+Sitemap: https://qiriro.com/afretec/sitemap.xml
