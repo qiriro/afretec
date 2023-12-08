@@ -138,9 +138,9 @@ def resize_and_compress_images(quality=85):
 
 if __name__ == '__main__':
     #download_member_csv()
-    df = clean_member_info()
+    #df = clean_member_info()
     #download_images(df)
-    #resize_and_compress_images()
+    resize_and_compress_images()
     
    
    
