@@ -6,7 +6,6 @@ description: List of members
 nav: true
 nav_order: 2
 ---
-
 {% for member in site.data.members %}
   <div class="card hoverable">
     <div class="row no-gutters">
