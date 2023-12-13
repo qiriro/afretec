@@ -17,6 +17,8 @@ def download_member_csv():
     os.makedirs(output_dir, exist_ok=True)
     raw_csv_file = os.path.join(output_dir, 'afretec-member-information.csv')
     print(f"Saving raw member information to {raw_csv_file}")
+    # Shuffle the rows
+    df= df.sample(frac=1.0, random_state=10) 
     df.to_csv(raw_csv_file, index=False)
 def add_image_file_name(df):
     df['Image'] = df.apply(lambda row: get_image_file_name(row), axis=1)
@@ -122,8 +124,7 @@ def resize_and_compress_images(quality=85):
 
             # Open the image
             with Image.open(input_path) as img:
-                if img.mode == 'RGBA':
-                    img = img.convert('RGB')
+                img = img.convert('RGB')
                 mywidth = 600
                 wpercent = (mywidth/float(img.size[0]))
                 hsize = int((float(img.size[1])*float(wpercent)))
@@ -134,13 +135,22 @@ def resize_and_compress_images(quality=85):
                 # Save the resized and compressed image
                 resized_img.save(output_path, optimize=True, quality=quality)
 
-                
+def remove_kizito():
+    current_dir = os.path.dirname(__file__)
+    in_file = os.path.join(current_dir,
+                                    '../_data/members.csv')
+    df = pd.read_csv(in_file)
+
+    df = df[df['FirstName'] != 'Kizito'] 
+    df.to_csv(in_file, index=False)
+
 
 if __name__ == '__main__':
     #download_member_csv()
     #df = clean_member_info()
     #download_images(df)
-    resize_and_compress_images()
+    #resize_and_compress_images()
+    remove_kizito()
     
    
    
