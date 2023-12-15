@@ -7,8 +7,9 @@ related_posts: false
 ---
 # Introduction and Background
 
-I'm thrilled to share an exciting new research funding opportunity from the African Engineering and Technology Network (Afretec) focused on driving inclusive digital transformation across Africa. Afretec, an initiative spearheaded by Carnegie Mellon University Africa, just announced a call for proposals for collaborative seed grants up to $50,000 to support pioneering research related to digital technologies. 
+I'm thrilled to share an exciting new [research funding opportunity]({{site.url}}{{site.baseurl}}/assets/pdf/grants/afretec-seed-grant - 2024-CFP.pdf)from the African Engineering and Technology Network (Afretec) focused on driving inclusive digital transformation across Africa. 
 
+Afretec, an initiative spearheaded by Carnegie Mellon University Africa, just announced a call for proposals for collaborative seed grants up to $50,000 to support pioneering research related to digital technologies. 
 
 # Eligibility Criteria
 - Applicant teams must consist of Principal Investigator (PI) researchers from at least two Afretec member universities namely The American University in Cairo, Carnegie Mellon University, University of Lagos, University of Nairobi, University of Rwanda and the University of Witwatersrand. 

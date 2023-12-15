@@ -24,9 +24,7 @@ Transformation Research Grant proposal. A person can be a PI or co-PI on only on
 
 # Grant details
 
-Certainly! Here's the provided information formatted in a markdown table:
-
-| Dates                          |                                     | Details
+| Dates                          |                                     |
 |--------------------------------------------|-------------------------------------|
 | Start Date                                  | June 1, 2024                        |
 | Award Period                               | up to 36 months                     |
